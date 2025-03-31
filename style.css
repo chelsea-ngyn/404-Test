@@ -2,3 +2,13 @@
     background-color:#DACCE6;
     color: #B599CE;
 }
+
+.side-nav-ul {
+    display: flex;
+    align-self: stretch;
+}
+
+.side-nav-li {
+    align-self: stretch;
+    padding: 6px 14px;
+}
