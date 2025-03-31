@@ -31,95 +31,75 @@
   
   <main>
 
-    <nav class="navbar navbar-expand-lg p-3 mb-3 border-bottom">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">JMU Care</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dashboard</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Dropdown</a></li>
-                <li><a class="dropdown-item" href="#">Dropdown</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Dropdown</a></li>
-              </ul>
-            </li>
-            <li class="nav-item"><a class="nav-link" aria-disabled="true">History</a></li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-          <div class="d-flex dropdown ps-2">
-            <a href="#" class="align-items-center link-body-emphasis text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-              <img src="https://github.com/mdo.png" alt="username" width="30" height="30" class="rounded-circle">
-              <span class="d-none d-sm-inline mx-2">Username</span>
-            </a>
-            <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-              <li><a class="dropdown-item" href="#">New project...</a></li>
-              <li><a class="dropdown-item" href="#">Settings</a></li>
-              <li><a class="dropdown-item" href="#">Profile</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Sign out</a></li>
-            </ul>
-          </div> <!--close dropdown-->
-        </div> <!--close navbar collapse-->
-      </div> <!--close container-->
-    </nav>
+    
 
 
     <div class="container-fluid">
       <div class="row flex-nowrap">
 
         <!--sidebar-->
-        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0">
-          <div class="d-flex flex-column align-items-center align-items-sm-start px-4 pt-3 border border-light-subtle rounded">
-            <h3>Menu</h3>
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 mt-2">
+          <div class="d-flex flex-column align-items-center vh-100 align-items-sm-start px-4 pt-3 border-end border-light-subtle">
+            <h3>JMU Care</h3>
+
+            <!--search bar-->
+            <div class="input-group rounded mb-4">
+              <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+            </div>
+
             <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
-              <li class="nav-item">
+              <li class="nav-item nav-active">
                 <a href="#" class="nav-link link-body-emphasis align-middle px-0">
-                  <i class="fa-solid fa-house"></i>
-                  <span class="ms-1 d-none d-sm-inline">Home</span>
+                  <i class="fa-solid fa-border-all"></i>
+                  <span class="ms-1 d-none d-sm-inline">Home/Dashboard</span>
                 </a>
               </li>
-              <li>
-                <a href="#submenu1" data-bs-toggle="collapse" class="nav-link link-body-emphasis px-0 align-middle">
-                  <i class="fa-solid fa-table-columns"></i>
-                  <span class="ms-1 d-none d-sm-inline">Dashboard</span>
-                  <i class="fa-solid fa-caret-down"></i>
+              <li class="nav-item">
+                <a href="grantsprojects.html" class="nav-link link-body-emphasis px-0 align-middle">
+                  <i class="fa-solid fa-file"></i>
+                  <span class="ms-1 d-none d-sm-inline">Grants/Projects</span>
                 </a>
-                <ul class="collapse nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
-                  <li class="w-100"><a href="#" class="nav-link link-body-emphasis px-0">
-                    <span class="d-none d-sm-inline">Dropdown</span>
-                  </a></li>
-                  <li>
-                    <a href="#" class="nav-link link-body-emphasis px-0">
-                      <span class="d-none d-sm-inline">Dropdown</span>
-                    </a>
-                  </li>
-                </ul>
               </li>
-              <li>
+              <li class="nav-item">
                 <a href="#" class="nav-link link-body-emphasis px-0 align-middle">
-                  <i class="fa-solid fa-clock-rotate-left"></i>
-                  <span class="ms-1 d-none d-sm-inline">History</span>
+                  <i class="fa-solid fa-list-check"></i>
+                  <span class="ms-1 d-none d-sm-inline">Tasks</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link link-body-emphasis px-0 align-middle">
+                  <i class="fa-solid fa-users"></i>
+                  <span class="ms-1 d-none d-sm-inline">All Users</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link link-body-emphasis px-0 align-middle">
+                  <i class="fa-solid fa-bell"></i>
+                  <span class="ms-1 d-none d-sm-inline">Messages</span>
+                </a>
+              </li>
+              <div>
+                <hr>
+              </div>
+              <li class="nav-item">
+                <a href="#" class="nav-link link-body-emphasis px-0 align-middle">
+                  <i class="fa-solid fa-gear"></i>
+                  <span class="ms-1 d-none d-sm-inline">Settings</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link link-body-emphasis px-0 align-middle">
+                  <i class="fa-solid fa-circle-info"></i>
+                  <span class="ms-1 d-none d-sm-inline">Support</span>
                 </a>
               </li>
             </ul>
-            <hr>
-            <div class="dropup pb-4">
+            <div class="dropdown pb-4">
               <a href="#" class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
                 <img src="https://github.com/mdo.png" alt="username" width="30" height="30" class="rounded-circle">
                 <span class="d-none d-sm-inline mx-2">Username</span>
               </a>
               <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-                <li><a class="dropdown-item" href="#">New project...</a></li>
-                <li><a class="dropdown-item" href="#">Settings</a></li>
-                <li><a class="dropdown-item" href="#">Profile</a></li>
-                <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#">Sign out</a></li>
               </ul>
             </div> <!--close username dropdown-->
@@ -177,8 +157,11 @@
               <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 ">
                 <h2>All Grants</h2>
                 <div class="btn-toolbar mb-2 mb-md-0">
-                  <div class="me-2">
-                    <button type="button" class="btn btn-outline-secondary">
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success me-2" type="submit">Search</button>
+                    </form>
+                    <button type="button" class="btn btn-outline-secondary me-2">
                       <i class="fa-solid fa-filter"></i>
                     </button>
 
@@ -187,6 +170,7 @@
                       Create
                       <i class="fa-solid fa-plus"></i>
                     </button>
+
                     <!--create grant modal -->
                     <div class="modal fade" id="creategrantModal" tabindex="-1" aria-labelledby="creategrantModalLabel" aria-hidden="true">
                       <div class="modal-dialog modal-dialog-centered">
