@@ -23,4 +23,22 @@ document.addEventListener("DOMContentLoaded", function () {
             cutout: '70%'
         }
     });
+    
+    function updateDropdownText() {
+        let selected = [];
+        document.querySelectorAll('.multi-select-checkbox:checked').forEach(checkbox => {
+            selected.push(checkbox.value);
+        });
+
+        let btnText = selected.length > 0 ? selected.join(', ') : 'Select Options';
+        document.getElementById('multiSelectDropdownBtn').innerText = btnText;
+    }
+
+    document.querySelectorAll('.multi-select-checkbox').forEach(checkbox => {
+        checkbox.addEventListener('click', function(event) {
+            event.stopPropagation(); // Keep dropdown open when clicking checkboxes
+            updateDropdownText();
+        });
+    });
+    
 });

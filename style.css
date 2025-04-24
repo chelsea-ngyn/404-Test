@@ -3,12 +3,34 @@
     color: #B599CE;
 }
 
+.sidebar-col {
+    display: flex;
+    width: 280px;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0; 
+}
+
+
+.logo {
+    height: 69.395px;
+    align-self: stretch;
+    aspect-ratio: 232.00/69.40;
+}
+
 .side-nav-ul {
     display: flex;
+    padding: 24px var(--Padding-Navbar, 24px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
     align-self: stretch;
 }
 
 .side-nav-li {
-    align-self: stretch;
-    padding: 6px 14px;
+    display: flex;
+padding: 12px 16px;
+align-items: center;
+gap: 12px;
+align-self: stretch;
 }
